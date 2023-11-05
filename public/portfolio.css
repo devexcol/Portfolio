@@ -57,6 +57,10 @@ html {
 }
 .navbar li#contact:hover{
     transform: scale(1.1);
+    background-color:var(--main-bg-color);
+}
+.navbar li#contact a:hover{
+    color:var(--main-button-color) ;
 }
 .intro{
     max-width: 100%;
