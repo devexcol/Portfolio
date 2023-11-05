@@ -1,0 +1,188 @@
+:root{
+
+    --main-bg-color:#DDE6ED;
+    --secondary-bg-color:#9DB2BF;
+    --main-button-color:#27374D;
+    --hover-button-color:#526D82;
+
+}
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.navbar{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: var(--main-button-color);
+
+}
+.navbar #mainIcon{
+    margin-left: 27%;
+}
+.navbar > ul{
+    margin-right: 30%;
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+    list-style: none;
+}
+.navbar li{
+    margin-right: 1rem;
+    padding: 0.3rem;
+}
+.navbar a{
+    color: var(--main-bg-color);
+    text-decoration: none;
+    transition: 0.2s; 
+}
+
+.navbar a:hover{ 
+    color:#FFFF;
+}   
+.navbar li#contact{
+    
+    border: 1px var(--main-bg-color) solid;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.navbar li#contact:hover{
+    transform: scale(1.1);
+}
+.intro{
+    max-width: 100%;
+    height: auto;
+    padding: 9rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.introImg{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.introImg img{
+    width: 200%;
+    height: auto;
+}
+.introP{
+    width: 40%;
+    height: auto;
+    margin-left: 4rem;
+    color: var(--main-button-color);
+}
+.introP h2{
+    
+    color: var(--hover-button-color);
+}
+.introP p{
+    width: 90%;
+    text-align: justify;
+}
+.socialIcons a{
+    text-decoration:none;
+}
+.socialIcons svg{
+   transition: transform .2;
+}
+.socialIcons svg:hover{
+    fill: #526D82;
+    transform: scale(1.1);
+}
+.mainBtn{
+    width: 8rem;
+    height: auto;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    color: var(--main-bg-color);
+    background-color: var(--main-button-color);
+    
+}
+.mainBtn:hover{
+    color: #27374D;
+    background-color: var(--secondary-bg-color);
+    transform:scale(1.1);
+}
+.aboutMe{
+    padding: 7rem 0 7rem 0;;
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    
+}
+.aboutMe h2{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--main-button-color);
+ }
+ .aboutMe p{
+    width: 56%;
+    color: var(--main-button-color);
+    text-align: justify;
+ }
+ .abilityCard{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+ }
+.card{
+    width: 10rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-bg-color);
+    transition: .2s;
+    z-index: 1;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card p,h3{
+    width: 100%;
+    text-align: center;
+}
+.contact{
+    width: 100%;
+    height: 500px;
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h2{
+    font-size: 3rem;
+    color: var(--main-button-color);
+}
+.contactForm{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactForm  label{
+    margin: 1rem 0 1rem 0;
+}
+.contactForm input{
+    padding: 0.8rem;
+    border: none;
+    background-color: #DDE6ED;
+    border-radius: 0.4rem;
+}
